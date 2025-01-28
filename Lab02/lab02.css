@@ -1,0 +1,157 @@
+
+* {
+   box-sizing: border-box;
+}
+body, section, header, div, p, h1, h2, h3, ul, li {
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: 'Open Sans', sans-serif;
+   box-sizing: border-box;
+   background-color: #e4e7eb;
+   font-weight: 300;
+   padding: 40px;
+}
+header {
+   box-sizing: border-box;
+   left: 50px;
+   border-style: outset;
+   width: 910px;
+
+}
+h1 {
+   text-align: center;
+   font-weight: 600;
+   font-size: 42px;
+   padding: 10px 0;
+
+}
+
+section {
+   width: 910px;
+   text-align: center;
+   margin: 0 auto;
+}
+
+.column{
+   display: inline-block;
+   width: 300px;
+   background-color: white;
+   padding: 20px 0;
+   box-shadow: 0 4px 6px rgba(47, 59, 64, 0.35);
+   text-align: center;
+   vertical-align: top;
+
+}
+
+.featured{
+   display: inline-block;
+   width: 300px;
+   background-color: #2F4F4F;
+   color: white;
+}
+
+li{
+   height: 40px;
+}
+
+.column li{
+   text-align: center;
+}
+
+.column li:nth-child(even){
+  background-color: rgba(47, 59, 64, 0.35);
+
+}
+
+.column a:hover{
+   background-color: #437CBF;
+}
+
+.column a {
+   margin-top: 10px;
+   display: inline-block;
+   padding: 10px 110px;
+   background-color: #3A6BA5;
+   color: white;
+   text-decoration: none;
+   font-size: 1rem;
+   border-radius: 3px;
+   transition: background-color 0.3s ease;
+
+}
+
+ul{
+
+   margin-top: 5px;
+   margin-bottom: 10px;
+   list-style: none;
+}
+
+.price {
+   font-size: 36px;
+   font-weight: 600;
+   margin: 10px 0 10px
+}
+
+.price span {
+   font-size: 1rem;
+}
+
+.price.free {
+   background-color: #5BB189;
+}
+
+.price.standard{
+   background-color: #4B0082;
+}
+
+.price.professional{
+   background-color: #EC632A;
+}
+
+.column span{
+   font-weight: bold;
+}
+/* add styles here */
+/* Confidence Section */
+#confidence {
+   background-color: #2F4F4F;
+   color: white;
+   padding: 30px 20px;
+   margin-top: 30px;
+   text-align: left;
+   width: 910px;
+   align-content: center;
+   margin-left: 265px;
+}
+
+#confidence h2 {
+   font-size: 24px;
+   font-weight: 800;
+   margin-bottom: 10px;
+}
+
+#confidence p {
+   font-size: 18px;
+   font-weight: 300;
+   margin-bottom: 20px;
+}
+
+#confidence ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}
+
+#confidence ul li {
+   font-size: 18px;
+   margin-left: 40px;
+   padding-left: 30px;
+   background-image: url('checkmark.svg');
+   background-repeat: no-repeat;
+   background-position: left center;
+   background-size: 24px;
+   margin-bottom: 10px;
+}
