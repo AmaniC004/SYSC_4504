@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+/* general text formatting */
+
+h1, h2, h3, nav, footer {
+ font-family: Lobster, Cambria, "Times New Roman", serif;
+}
+body {
+   font-family: "Open Sans", Verdana, Arial, sans-serif;
+   font-size: 100%;
+   background-color: #E8EAF6;
+}
+
+/* header and navigation */
+
+header, footer {
+  color: white;
+  background-color: #1A237E;
+  margin: 0em 4em 0.25em 4em;
+}
+header h1 {
+  padding: 0.5rem 0 0 1.25rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+header p {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  padding: 0 0 0 1.25rem;
+}
+
+
+/* main article styling */
+main {
+   background-color: white;
+   margin: 1em 4em 1em 4em;
+   padding: 1em;
+}
+
+section {
+  margin-bottom: 1em;
+  padding: 0;
+  width: 100%;
+}
+
+.detail-header {
+  padding-left:13px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  color: white;
+  background-color: #7986CC;
+  font-size:1.25rem;
+}
+
+legend {
+  font-size: 1.35rem;
+  background-color: #7986CB;
+  height: 1.7rem;
+  color: #E8EAF6;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0;
+  padding: 5px 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  background-color: #C5CAE9;
+  width: 100%;
+  border: none;
+}
+
+form p {
+  margin: 0.5em 0 0.5em 0;
+}
+
+#title, #continent, #country, #city {
+  width: 50%;
+  height: 25px;
+}
+
+#title,
+#description {
+  width: 95%;
+}
+
+table {
+  width: 100%;
+}
+
+.form-section {
+  width: 50%;
+}
+
+.form-border {
+  border: solid 1pt #A7b2EC;
+  margin: 0px 3px 5px 0px;
+}
+
+.accept {
+  background-color: #A7b2EC;
+  padding: 0.2em;
+}
+
+.license{
+  background-color: #A7b2EC;
+  padding: 0.2em;
+}
+
+#continent, #country, #color, #date, #time, button {
+  cursor: pointer;
+}
+
+button {
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  background-color: rgba(238, 20, 129, 0.897);
+  border-radius: 10px;
+  height: 40px;
+  width: 100px;
+  border: none;
+}
+
+button:hover {
+  opacity: 0.8;
+  transform: scale(0.98);
+}
+
+
+
+
