@@ -4,14 +4,19 @@ window.onload = () => {
     hideNoteBtn.style.display = 'none'; // Use display instead of visibility
 
     addNoteBtn.addEventListener('click', function () {
-        const body = document.querySelectorAll('*');
-        console.log(body);
+        traverseDOM(document.body);
 
-        body.forEach((elem) => {
-            if (elem.tagName !== 'SCRIPT' && elem.tagName !== 'STYLE' && elem.tagName !== 'SPAN') {
-                createSpan(elem);
+        function traverseDOM(element) {
+            if (element.children.length > 0) {
+                for (let child of element.children) {
+                    traverseDOM(child);
+                }
             }
-        });
+
+            if (element.tagName !== 'SCRIPT' && element.tagName !== 'STYLE' && element.tagName !== 'SPAN') {
+                createSpan(element);
+            }
+        }
 
         function createSpan(element) {
             let span = document.createElement('span');
