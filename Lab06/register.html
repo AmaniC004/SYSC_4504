@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QuickPoll Question Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            font-size: 16px;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 5px;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            let question = document.getElementById("question").value;
+            if (question.trim() === "") {
+                alert("Please enter a question.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>QuickPoll Question Registration</h1>
+    <form method="post" action="process.php">
+        <label for="question">What is your question?</label><br>
+        <input type="text" id="question" name="question" required><br>
+        <input type="submit" value="Register my question" onclick="return validateForm()">
+    </form>
+</body>
+</html>
